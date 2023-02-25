@@ -1,9 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Address from "./components/RestaurantComponents/Address";
+import MainContent from "./components/RestaurantComponents/MainContent";
+import RestaurantLogo from "./components/RestaurantComponents/RestaurantLogo";
+import SiderList from "./components/RestaurantComponents/SiderList";
+import SocialNetworks from "./components/RestaurantComponents/SocialNetworks";
+import CustomTableComponent from "./components/SpecificCaseComponents/CustomTableComponent";
+import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +24,19 @@ function App() {
           Learn React
         </a>
       </header>
+      {/* TODO: update the following components style to correspond with ./components/RestaurantComponents/FinalRenderExpected.jpg picture */}
+      <div>
+        <Address />
+        <MainContent />
+        <RestaurantLogo />
+        <SiderList />
+        <SocialNetworks />
+      </div>
+
+      {/* TODO: try to center inline filter component menu items */}
+      <div>
+        <CustomTableComponent />
+      </div>
     </div>
   );
 }
