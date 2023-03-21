@@ -36,3 +36,251 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/*********************************************/
+/******* MAIN CONTAINER & MAIN CLASSES *******/
+/*********************************************/
+.main-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.main-content .main-content__inner{
+  display: flex;
+  flex-direction: row;
+}
+
+.div-66{
+  max-width: 66%;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-33{
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-50{
+  width: 50%;
+  height: auto;
+  display: flex;
+}
+
+
+h1{
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+h3{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+/*********************************************/
+/*********************************************/
+/*********************************************/
+
+
+
+
+
+
+
+
+/******************************/
+/********** HEADER ************/
+/******************************/
+header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header .restaurant-logo{
+  border: 1px solid #000000;
+}
+
+header .restaurant-logo img{
+  max-width: 200px;
+  height: auto;
+}
+
+header #custom-header{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  border: 1px solid #000000;
+
+}
+
+header #custom-header a{
+  display: inline-block;
+}
+/******************************/
+/******************************/
+/******************************/
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/******** MAIN CONTENT ********/
+/******************************/
+.main-content{
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px;
+
+  border: 1px solid #000000;
+}
+
+.btn{
+  display: inline-flex;
+  max-height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+
+  background-color: #ffffff;
+  color: #000000;
+  transition: all .4s ease;
+  text-decoration: none;  
+}
+
+.btn:hover{
+  background-color: #000000;
+  color: #ffffff;
+  transition: all .4s ease;
+  text-decoration: underline;
+}
+/******************************/
+/******************************/
+/******************************/
+
+
+
+
+
+
+
+
+
+/****************************/
+/******** SIDER LIST ********/
+/****************************/
+.siderList{
+  height: 100%;
+  border: 1px solid #000;    
+}
+
+.siderList ul{
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0;
+}
+
+.siderList__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  text-align: center;
+}
+/****************************/
+/****************************/
+/****************************/
+
+
+
+
+
+
+
+
+
+
+/******************************/
+/*********** FOOTER ***********/
+/******************************/
+footer{
+  display: flex;
+  flex-direction: row;
+
+  border: 1px solid #000000;
+}
+
+.social-networks{
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.social-networks ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.adress{
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+/******************************/
+/******************************/
+/******************************/
+
+
+
+
+
+
+
+
+
+/*******************************/
+/******** MEDIA QUERIES ********/
+/*******************************/
+@media screen and (max-width: 1024px){
+
+  header{
+    flex-direction: column;
+  }
+
+  .main-container{
+    flex-direction: column;
+  }
+
+  .div-66, .div-33{
+    max-width: 100%;
+  }
+}
+/*******************************/
+/*******************************/
+/*******************************/

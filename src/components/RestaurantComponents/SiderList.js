@@ -2,7 +2,7 @@ const MealComponent = ({ meal }) => {
   const lorem =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
   return (
-    <div>
+    <div className="siderList__item">
       <img href={meal.image} />
       <p>{meal.price}</p>
       <p>{lorem}</p>
@@ -51,12 +51,14 @@ const SiderList = () => {
     },
   ];
   return (
-    <div>
-      {meals.map((meal) => (
-        <li key={meal.name}>
-          <MealComponent meal={meal} />
-        </li>
-      ))}
+    <div className="siderList">
+      <ul>
+        {meals.map((meal) => (
+          <li key={meal.name}>
+            <MealComponent meal={meal} />
+          </li>
+        ))}
+      </ul>      
     </div>
   );
 };

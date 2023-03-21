@@ -1,6 +1,7 @@
 import "./App.css";
 import Address from "./components/RestaurantComponents/Address";
 import MainContent from "./components/RestaurantComponents/MainContent";
+import CustomHeader from "./components/RestaurantComponents/customHeader";
 import RestaurantLogo from "./components/RestaurantComponents/RestaurantLogo";
 import SiderList from "./components/RestaurantComponents/SiderList";
 import SocialNetworks from "./components/RestaurantComponents/SocialNetworks";
@@ -11,10 +12,12 @@ function App() {
   return (
     <div>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+
+        {/* <img src={logo} className="App-logo" alt="logo" />
+
+        <p>Edit <code>src/App.js</code> and save to reload.</p>
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,15 +25,48 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
+
+
       </header>
       {/* TODO: update the following components style to correspond with ./components/RestaurantComponents/FinalRenderExpected.jpg picture */}
       <div>
-        <Address />
-        <MainContent />
-        <RestaurantLogo />
-        <SiderList />
-        <SocialNetworks />
+
+	  	<div className="main-container">
+
+			<div className="div-66">
+				
+				<header>
+					
+					<RestaurantLogo />
+          			<CustomHeader/>									
+
+				</header>
+
+					<MainContent />
+
+				<footer>
+
+					<SocialNetworks />
+
+					<Address />	
+
+				</footer>
+
+				
+
+			</div>
+
+			<div className="div-33">
+
+				<SiderList />
+
+			</div>					
+			
+			
+		
+		</div>
+
       </div>
 
       {/* TODO: try to center inline filter component menu items */}
